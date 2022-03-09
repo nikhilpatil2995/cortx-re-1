@@ -295,7 +295,7 @@ EOF
                                         string(name: 'CORTX_ALL_IMAGE', value: "${env.cortx_all_image}"),
                                         string(name: 'CORTX_SERVER_IMAGE', value: "${env.cortx_rgw_image}"),
                                         string(name: 'CORTX_SCRIPTS_REPO', value: "Seagate/cortx-k8s"),
-                                        string(name: 'CORTX_SCRIPTS_BRANCH', value: "integration"),
+                                        string(name: 'CORTX_SCRIPTS_BRANCH', value: "${CORTX_SCRIPTS_BRANCH}"),
                                         string(name: 'hosts', value: "${singlenode_host}"),
                                         string(name: 'EMAIL_RECIPIENTS', value: "DEBUG")
                                  ] 
@@ -314,8 +314,8 @@ EOF
                                         string(name: 'CORTX_ALL_IMAGE', value: "${env.cortx_all_image}"),
                                         string(name: 'CORTX_SERVER_IMAGE', value: "${env.cortx_rgw_image}"),
                                         string(name: 'CORTX_SCRIPTS_REPO', value: "Seagate/cortx-k8s"),
-                                        string(name: 'CORTX_SCRIPTS_BRANCH', value: "integration"),
-                                        string(name: 'hosts', value: "${singlenode_host}"),
+                                        string(name: 'CORTX_SCRIPTS_BRANCH', value: "${CORTX_SCRIPTS_BRANCH}"),
+                                        string(name: 'hosts', value: "${threenode_hosts}"),
                                         string(name: 'EMAIL_RECIPIENTS', value: "DEBUG")
                                  ] 
                              }
